@@ -1,34 +1,60 @@
+.theme-dark {
+	/* THEME VARIABLES */
+	--blogster-palette-primary: #20bdff;
+	--blogster-palette-primary-text: #262626;
+
+	--blogster-text: #d2d3d7;
+	--blogster-text: #d4d4d8;
+	--blogster-text-muted: #d2d3d7;
+	--blogster-text-heading: #fafafa;
+	--blogster-text-link: #20bdff;
+
+	--blogster-code-text: #cbd5e0;
+	--blogster-code-background: #1f2631;
+	--blogster-code-border: #2d3748;
+
+	--blogster-border: #2d3748;
+	--blogster-background-color: #18181b;
+	--blogster-background-secondary-color: #0f0f11;
+}
+
+.theme-light {
+	/* THEME VARIABLES */
+	--blogster-palette-primary: #4f46e5;
+	--blogster-palette-primary-text: #ffffff;
+
+	--blogster-text: #1e293b;
+	--blogster-text-muted: #64748b;
+	--blogster-text-heading: #0f172a;
+	--blogster-text-link: #2563eb;
+
+	--blogster-code-background: #f6f7f9;
+	--blogster-code-text: #47546b;
+	--blogster-code-border: #e2e8f0;
+
+	--blogster-border: #e2e8f0;
+	--blogster-background: #ffffff;
+}
+
 body {
-	--radius-s: 0px;
-	--radius-m: 0px;
-	--radius-l: 0px;
-	--input-radius: 0px;
-	--tab-radius-active: 0px;
-	--checkbox-radius: 0px;
-	--toggle-radius: 0px;
-	--toggle-thumb-radius: 0px;
-	--slider-thumb-radius: 0px;
-}
-
-.workspace-tab-header.is-active::before, .workspace-tab-header.is-active::after {
-	display: none;
-}
-
-svg * {
-	stroke-linecap: square;
-	stroke-linejoin: miter;
-	rx: 0;
-	ry: 0;
-}
-
-.menu {
-	padding: var(--size-2-1);
-}
-
-.menu-item {
-	padding: var(--size-4-1) var(--size-4-2);
-}
-
-.menu-separator {
-	margin: var(--size-2-1) calc(var(--size-2-1) * -1);
+	--font-text-theme: Verdana, sans-serif;
+	--background-primary: var(--blogster-background-color);
+	--background-secondary: var(--blogster-background-color);
+	
+	  /* Links */
+	  --link-color: var(--blogster-text-link);
+	  --link-color-hover: var(--blogster-text-link);
+	  --link-decoration: underline;
+	  --link-decoration-hover: underline;
+	  --link-decoration-thickness: auto;
+	  --link-external-color: var(--blogster-text-link);
+	  --link-external-color-hover: var(--blogster-text-link);
+	  --link-external-decoration: underline;
+	  --link-external-decoration-hover: underline;
+	  --link-external-filter: none;
+	  --link-unresolved-color: var(--blogster-text-muted);
+	  --link-unresolved-opacity: 0.7;
+	  --link-unresolved-filter: none;
+	  --link-unresolved-decoration-style: solid;
+	  --link-unresolved-decoration-color: hsla(var(--interactive-accent-hsl), 0.3);
 }
